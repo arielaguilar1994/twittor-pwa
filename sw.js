@@ -5,7 +5,7 @@ const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
-    // '/',
+    '/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
@@ -60,5 +60,5 @@ self.addEventListener('fetch', e => {
         }
     });
 
-    e.waitUntil(response);
+    e.respondWith(response);
 });
